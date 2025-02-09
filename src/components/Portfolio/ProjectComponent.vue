@@ -4,6 +4,7 @@ import mdiAccountGroupIcon from 'vue-material-design-icons/AccountGroup.vue';
 import mdiListStatusIcon from 'vue-material-design-icons/ListStatus.vue';
 import mdiClockTimeEightOutlineIcon from 'vue-material-design-icons/ClockTimeEightOutline.vue';
 import mdiHammerWrenchIcon from 'vue-material-design-icons/HammerWrench.vue';
+import mdiChevronDownIcon from 'vue-material-design-icons/ChevronDown.vue';
 
 import 'vue-material-design-icons/styles.css';
 
@@ -12,7 +13,7 @@ import { ref } from 'vue'
 const props = defineProps<{
   iconUrl: string
   name: string
-  // description: string
+  description: string
   type: string
   collaborators: string
   status: string
@@ -20,34 +21,53 @@ const props = defineProps<{
   tools: string
 }>()
 
-// const viewProjectDescription = ref(true);
+const viewProjectDescription = ref(false);
+
+function toggleProjectDescription() {
+  viewProjectDescription.value = !viewProjectDescription.value;
+}
 </script>
 
 <template>
-  <div class="project-container">
+  <div
+    class="project-container"
+    @click="toggleProjectDescription">
     <!-- Project Content -->
     <div class="project-content">
-      <!-- Icon -->
-      <div class="project-icon-container">
-        <img :src="props.iconUrl" :alt="props.name" />
+      <div class="initial-view">
+        <!-- Icon -->
+        <div class="project-icon-container">
+          <img :src="props.iconUrl" :alt="props.name" />
+        </div>
+
+        <!-- Dividing line vertically -->
+        <div class="divider"></div>
+
+        <!-- Metadata -->
+        <div class="project-metadata-container">
+          <p class="project-name"><strong>{{ props.name }}</strong></p>
+          <p class="project-type"><mdiShapePlusIcon /> {{ props.type }}</p>
+          <p class="project-collaborators"><mdiAccountGroupIcon /> {{ props.collaborators }}</p>
+          <p class="project-status"><mdiListStatusIcon /> {{ props.status }}</p>
+          <p class="project-dev-period"><mdiClockTimeEightOutlineIcon/> {{ props.devPeriod }}</p>
+          <p class="project-tools"><mdiHammerWrenchIcon /> {{ props.tools }}</p>
+        </div>
       </div>
 
-      <!-- Dividing line vertically -->
-      <div class="divider"></div>
+      <!-- TODO: Add arrow icon on hover to indicate that the user can click on the project -->
+      <mdiChevronDownIcon
+        class="chevron"
+        :class="{ rotate: viewProjectDescription }"
+        style="font-size: 2rem; color: #333;"
+      />
 
-      <!-- Metadata -->
-      <div class="project-metadata-container">
-        <p class="project-name"><strong>{{ props.name }}</strong></p>
-        <p class="project-type"><mdiShapePlusIcon /> {{ props.type }}</p>
-        <p class="project-collaborators"><mdiAccountGroupIcon /> {{ props.collaborators }}</p>
-        <p class="project-status"><mdiListStatusIcon /> {{ props.status }}</p>
-        <p class="project-dev-period"><mdiClockTimeEightOutlineIcon/> {{ props.devPeriod }}</p>
-        <p class="project-tools"><mdiHammerWrenchIcon /> {{ props.tools }}</p>
-      </div>
+      <!-- Project Description -->
+      <transition name="slide-fade">
+        <div v-if="viewProjectDescription" class="project-description">
+          <p>{{ props.description }}</p>
+        </div>
+      </transition>
     </div>
-
-    <!-- TODO: Project description under the parent container -->
-
   </div>
 </template>
 
@@ -55,7 +75,7 @@ const props = defineProps<{
 .project-container {
   padding: 4rem;
   background-color: white;
-  margin: 4rem 0;
+  margin: 1rem 0;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -67,8 +87,9 @@ const props = defineProps<{
   padding: 40px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   display: flex;
+  flex-direction: column;
   align-items: center;
-  gap: 2rem;
+  gap: 1rem;
   max-width: 800px;
   width: 100%;
   border-radius: 5px;
@@ -76,7 +97,7 @@ const props = defineProps<{
   background: rgba(255, 255, 255, 0.5);
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
-  transition: transform 0.2s ease-in-out;
+  transition: transform 0.2s;
 }
 
 .project-content:hover {
@@ -91,12 +112,13 @@ const props = defineProps<{
 
 .project-icon-container img {
   width: 200px;
-  height: auto;
+  height: 200px;
+  margin-left: 2rem;
 }
 
 .divider {
   height: 100%;
-  width: 2px;
+  width: 5px;
   background-color: #333;
 }
 
@@ -133,5 +155,47 @@ const props = defineProps<{
 .project-dev-period mdiClockTimeEightOutlineIcon,
 .project-tools mdiHammerWrenchIcon {
   font-size: 1.5rem;
+}
+
+.initial-view {
+  display: flex;
+  gap: 2rem;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.project-description {
+  font-size: 1.2rem;
+  color: #333;
+  text-align: center;
+}
+
+.slide-fade-enter-active, .slide-fade-leave-active {
+  transition: max-height 0.5s ease-in-out, opacity 0.4s ease-in-out;
+  overflow: hidden;
+}
+
+.slide-fade-enter-from, .slide-fade-leave-to {
+  max-height: 0;
+  opacity: 0;
+}
+
+.slide-fade-enter-to, .slide-fade-leave-from {
+  max-height: 300px;
+  opacity: 1;
+}
+
+.project-description {
+  overflow: hidden;
+  transition: max-height 0.5s ease-in-out, opacity 0.4s ease-in-out;
+}
+
+.chevron {
+  transition: transform 0.3s ease-in-out;
+}
+
+.chevron.rotate {
+  transform: rotate(180deg);
 }
 </style>
