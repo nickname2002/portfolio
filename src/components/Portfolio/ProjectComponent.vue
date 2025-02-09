@@ -1,0 +1,137 @@
+<script setup lang="ts">
+import mdiShapePlusIcon from 'vue-material-design-icons/ShapePlus.vue';
+import mdiAccountGroupIcon from 'vue-material-design-icons/AccountGroup.vue';
+import mdiListStatusIcon from 'vue-material-design-icons/ListStatus.vue';
+import mdiClockTimeEightOutlineIcon from 'vue-material-design-icons/ClockTimeEightOutline.vue';
+import mdiHammerWrenchIcon from 'vue-material-design-icons/HammerWrench.vue';
+
+import 'vue-material-design-icons/styles.css';
+
+import { ref } from 'vue'
+
+const props = defineProps<{
+  iconUrl: string
+  name: string
+  // description: string
+  type: string
+  collaborators: string
+  status: string
+  devPeriod: string
+  tools: string
+}>()
+
+// const viewProjectDescription = ref(true);
+</script>
+
+<template>
+  <div class="project-container">
+    <!-- Project Content -->
+    <div class="project-content">
+      <!-- Icon -->
+      <div class="project-icon-container">
+        <img :src="props.iconUrl" :alt="props.name" />
+      </div>
+
+      <!-- Dividing line vertically -->
+      <div class="divider"></div>
+
+      <!-- Metadata -->
+      <div class="project-metadata-container">
+        <p class="project-name"><strong>{{ props.name }}</strong></p>
+        <p class="project-type"><mdiShapePlusIcon /> {{ props.type }}</p>
+        <p class="project-collaborators"><mdiAccountGroupIcon /> {{ props.collaborators }}</p>
+        <p class="project-status"><mdiListStatusIcon /> {{ props.status }}</p>
+        <p class="project-dev-period"><mdiClockTimeEightOutlineIcon/> {{ props.devPeriod }}</p>
+        <p class="project-tools"><mdiHammerWrenchIcon /> {{ props.tools }}</p>
+      </div>
+    </div>
+
+    <!-- TODO: Project description under the parent container -->
+
+  </div>
+</template>
+
+<style scoped>
+.project-container {
+  padding: 4rem;
+  background-color: white;
+  margin: 4rem 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.project-content {
+  font-family: 'Nunito Sans', sans-serif;
+  padding: 40px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  max-width: 800px;
+  width: 100%;
+  border-radius: 5px;
+  justify-content: space-between;
+  background: rgba(255, 255, 255, 0.5);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  transition: transform 0.2s ease-in-out;
+}
+
+.project-content:hover {
+  transform: scale(1.02);
+}
+
+.project-icon-container {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.project-icon-container img {
+  width: 200px;
+  height: auto;
+}
+
+.divider {
+  height: 100%;
+  width: 2px;
+  background-color: #333;
+}
+
+.project-metadata-container {
+  flex: 2;
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
+
+.project-metadata-container p {
+  font-size: 1.1rem;
+  color: #333;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.project-name {
+  font-size: 1.3rem;
+}
+
+.project-type,
+.project-collaborators,
+.project-status,
+.project-dev-period,
+.project-tools {
+  font-size: 1.1rem;
+}
+
+.project-type mdiShapePlusIcon,
+.project-collaborators mdiAccountGroupIcon,
+.project-status mdiListStatusIcon,
+.project-dev-period mdiClockTimeEightOutlineIcon,
+.project-tools mdiHammerWrenchIcon {
+  font-size: 1.5rem;
+}
+</style>
