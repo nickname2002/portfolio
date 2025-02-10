@@ -19,7 +19,7 @@ const dummyDescription = "Lorem ipsum dolor sit amet, consectetur adipiscing eli
       <ProjectComponent
         icon-url="public/project_icons/eos.png"
         name="Echoes of the Shattering"
-        :description="dummyDescription"
+        :description="$t('projects.eos.description')"
         type="Persoonlijk, Game"
         collaborators="2"
         status="Beta, On Hold"
@@ -31,7 +31,7 @@ const dummyDescription = "Lorem ipsum dolor sit amet, consectetur adipiscing eli
       <ProjectComponent
         icon-url="public/project_icons/tommy.png"
         name="TOMMY"
-        :description="dummyDescription"
+        :description="$t('projects.tommy.description')"
         type="Universiteitsproject, Desktop Applicatie"
         collaborators="8"
         status="Afgerond"
@@ -43,7 +43,7 @@ const dummyDescription = "Lorem ipsum dolor sit amet, consectetur adipiscing eli
       <ProjectComponent
         icon-url="public/project_icons/ooak.png"
         name="The Odyssey of a Knight: Into the Reto-Verse"
-        :description="dummyDescription"
+        :description="$t('projects.ooak.description')"
         type="Persoonlijk, Game"
         collaborators="1 (Solo)"
         status="Afgerond"
@@ -55,7 +55,7 @@ const dummyDescription = "Lorem ipsum dolor sit amet, consectetur adipiscing eli
       <ProjectComponent
         icon-url="public/project_icons/monozenith.png"
         name="MonoZenith"
-        :description="dummyDescription"
+        :description="$t('projects.monozenith.description')"
         type="Persoonlijk, Game Framework"
         collaborators="1 (Solo)"
         status="Sporadisch"
@@ -67,7 +67,7 @@ const dummyDescription = "Lorem ipsum dolor sit amet, consectetur adipiscing eli
       <ProjectComponent
         icon-url="public/project_icons/slitherzenith.png"
         name="SlitherZenith"
-        :description="dummyDescription"
+        :description="$t('projects.slitherzenith.description')"
         type="Persoonlijk, Game Framework"
         collaborators="1 (Solo)"
         status="Sporadisch"
@@ -79,7 +79,7 @@ const dummyDescription = "Lorem ipsum dolor sit amet, consectetur adipiscing eli
       <ProjectComponent
         icon-url="public/project_icons/overflowsim.png"
         name="OverflowSim"
-        :description="dummyDescription"
+        :description="$t('projects.overflowsim.description')"
         type="Universiteitsproject, Desktop Applicatie"
         collaborators="3"
         status="Completed"
@@ -91,7 +91,7 @@ const dummyDescription = "Lorem ipsum dolor sit amet, consectetur adipiscing eli
       <ProjectComponent
         icon-url="public/project_icons/found.png"
         name="Found"
-        :description="dummyDescription"
+        :description="$t('projects.found.description')"
         type="Persoonlijk, Game"
         collaborators="1 (Solo)"
         status="Completed"

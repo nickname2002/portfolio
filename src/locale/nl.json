@@ -1,0 +1,25 @@
+{
+  "projects": {
+    "eos": {
+      "description": "Echoes of the Shattering is een turn-based strategisch kaartspel waarin spelers unieke decks maken, uithoudingsvermogen en tactiek in balans houden en vijanden verslaan in intense gevechten. Verken een wereld vol mysterie en ontrafel de geheimen achter de Shattering."
+    },
+    "tommy": {
+      "description": "TOMMY is een topic modelling applicatie die ontwikkeld is door studenten van de Universiteit Utrecht in opdracht van EMMA. Voor het uitvoeren van topic modelling wordt het achterliggende Latent Dirichlet Allocation (LDA) algoritme of Non-Negative Matrix Factorization (NMF) algoritme uitgevoerd op de door de gebruiker aangeleverde bestanden. "
+    },
+    "ooak": {
+      "description": "The Odyssey of a Knight: Into the Retro-Verse is een 2D-platformer die een eerbetoon is aan klassiekers zoals Super Mario Bros. en retro gaming. Ontwikkeld voor de Summer of Gamedev Game Jam, neemt het spelers mee naar een levendige Retro-Verse vol sprongen, power-ups en vijanden die herinneren aan het gouden tijdperk van games. Stap in deze gepixeleerde tijdscapsule en herontdek de magie van retro gaming!"
+    },
+    "monozenith": {
+      "description": "MonoZenith is een lichte wrapper voor MonoGame, ontworpen om de game-ontwikkeling met C# te stroomlijnen."
+    },
+    "slitherzenith": {
+      "description": "SlitherZenith is een lichte wrapper voor PyGame, ontworpen om de game-ontwikkeling met Python te stroomlijnen."
+    },
+    "overflowsim": {
+      "description": "OverflowSim is een model dat gebruikt kan worden om dijkdoorbraken te simuleren. Het bevat de benodigde tools om te berekenen op welk moment een dijk van een bepaalde hoogte zal overstromen in een specifiek scenario. Het simulatiemodel werd oorspronkelijk ontwikkeld om bij te dragen aan het onderzoek naar dijkdoorbraken voor de cursus Onderzoeksmethoden aan de Universiteit Utrecht. De applicatie is gemaakt met C# (.NET6) en WinForms."
+    },
+    "found": {
+      "description": "Found is een 2D platformer game, gemaakt in Unity. In New Moon staat een gigantische, gesloten deur, met daarachter de zin van het leven. Het doel van het spel: vind de sleutels en open de deur. De speler kan sleutels verkrijgen door burgers van de stad te leren kennen en hun levels te voltooien."
+    }
+  }
+}

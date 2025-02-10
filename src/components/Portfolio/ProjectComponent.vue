@@ -54,7 +54,7 @@ function toggleProjectDescription() {
         </div>
       </div>
 
-      <!-- TODO: Add arrow icon on hover to indicate that the user can click on the project -->
+      <!-- Arrow icon on hover to indicate that the user can click on the project -->
       <mdiChevronDownIcon
         class="chevron"
         :class="{ rotate: viewProjectDescription }"
@@ -189,6 +189,8 @@ function toggleProjectDescription() {
 .project-description {
   overflow: hidden;
   transition: max-height 0.5s ease-in-out, opacity 0.4s ease-in-out;
+  text-align: left;
+  padding: 1rem;
 }
 
 .chevron {
