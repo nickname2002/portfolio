@@ -1,17 +1,19 @@
 <script setup lang="ts">
-import Navigation from './components/Navigation.vue'
-import Hero from '@/components/Hero.vue'
-import Introduction from '@/components/Introduction.vue'
-import Motto from '@/components/Motto.vue'
-import Portfolio from '@/components/Portfolio/Portfolio.vue'
+import NavigationSection from './components/NavigationSection.vue'
+import HeroSection from '@/components/HeroSection.vue'
+import IntroductionSection from '@/components/IntroductionSection.vue'
+import MottoSection from '@/components/MottoSection.vue'
+import PortfolioSection from '@/components/Portfolio/PortfolioSection.vue'
+import FooterSection from '@/components/FooterSection.vue'
 </script>
 
 <template>
-  <Navigation />
-  <Hero />
-  <Introduction />
-  <Motto />
-  <Portfolio />
+  <NavigationSection />
+  <HeroSection />
+  <IntroductionSection />
+  <MottoSection />
+  <PortfolioSection />
+  <FooterSection />
 </template>
 
 <style scoped>
