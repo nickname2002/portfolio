@@ -2,18 +2,9 @@
   <div class="introduction">
     <div class="container introduction-content">
       <img class="portrait" src="../assets/portrait.jpg" alt="portrait" />
-      <h1>Hi, ik ben Nick.</h1>
-      <p>
-        Ik ben 23 jaar en woon in Rotterdam. Mijn passie voor creëren begon al in mijn kindertijd,
-        toen ik urenlang bouwde met LEGO. Later verruilde ik fysieke blokjes voor digitale werelden
-        in Minecraft, waarin ik met evenveel plezier mijn creativiteit de vrije loop liet. In mijn
-        tienerjaren ontdekte ik de kracht van programmeren en hoe je met code iets moois én
-        functioneels kunt bouwen.
-      </p>
-      <p>
-        Die fascinatie voor technologie is altijd gebleven. Na informatica aan de Universiteit
-        Utrecht te hebben gestudeerd, heb ik van mijn hobby mijn beroep kunnen maken.
-      </p>
+      <h1>{{ $t('introduction.title') }}</h1>
+      <p>{{ $t('introduction.about1') }}</p>
+      <p>{{ $t('introduction.about2') }}</p>
     </div>
   </div>
 </template>

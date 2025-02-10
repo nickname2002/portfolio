@@ -9,7 +9,7 @@
 
 <style scoped>
 .hero {
-  background-image: url('../../public/backdrops/hero.jpg');
+  background-image: url('/backdrops/hero.jpg');
   background-size: cover;
   background-position: center;
   display: flex;

@@ -1,7 +1,36 @@
 {
+  "introduction": {
+    "title": "Hi, I'm Nick.",
+    "about1": "I'm 23 years old and live in Rotterdam. My passion for creating began in my childhood when I spent hours building with LEGO. Later, I swapped physical blocks for digital worlds in Minecraft, where I equally enjoyed letting my creativity run wild. In my teenage years, I discovered the power of programming and how you can build something beautiful and functional with code.",
+    "about2": "That fascination with technology has always remained. After studying computer science at Utrecht University, I was able to turn my hobby into a profession."
+  },
+
+  "portfolio": {
+    "subtext1": "In recent years, I have worked on several projects.",
+    "subtext2": "Below, I showcase a few highlights and personal favorites."
+  },
+
   "projects": {
     "eos": {
-      "description": "Echoes of the Shattering is a turn-based strategic card game where players craft unique decks, balance endurance and tactics, and defeat enemies in intense battles.\n      Explore a world full of mystery and unravel the secrets behind the Shattering."
+      "description": "Echoes of the Shattering is a turn-based strategic card game in which players create unique decks, balance stamina and tactics, and defeat enemies in intense battles. Explore a world full of mystery and unravel the secrets behind the Shattering."
+    },
+    "tommy": {
+      "description": "TOMMY is a topic modeling application developed by students from Utrecht University on behalf of EMMA. To perform topic modeling, the underlying Latent Dirichlet Allocation (LDA) algorithm or Non-Negative Matrix Factorization (NMF) algorithm is run on the user-provided files."
+    },
+    "ooak": {
+      "description": "The Odyssey of a Knight: Into the Retro-Verse is a 2D platformer that pays tribute to classics like Super Mario Bros. and retro gaming. Developed for the Summer of Gamedev Game Jam, it takes players to a lively Retro-Verse full of jumps, power-ups, and enemies that remind them of the golden age of gaming. Step into this pixelated time capsule and rediscover the magic of retro gaming!"
+    },
+    "monozenith": {
+      "description": "MonoZenith is a lightweight wrapper for MonoGame, designed to streamline game development with C#."
+    },
+    "slitherzenith": {
+      "description": "SlitherZenith is a lightweight wrapper for PyGame, designed to streamline game development with Python."
+    },
+    "overflowsim": {
+      "description": "OverflowSim is a model that can be used to simulate dike breaches. It contains the necessary tools to calculate when a dike of a certain height will flood in a specific scenario. The simulation model was originally developed to contribute to research on dike breaches for the Research Methods course at Utrecht University. The application is built with C# (.NET6) and WinForms."
+    },
+    "found": {
+      "description": "Found is a 2D platformer game, made in Unity. In New Moon, there is a gigantic, closed door, behind which lies the meaning of life. The goal of the game: find the keys and open the door. The player can obtain keys by getting to know the citizens of the city and completing their levels."
     }
   }
 }

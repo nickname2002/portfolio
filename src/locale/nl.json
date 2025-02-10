@@ -1,25 +1,50 @@
 {
+  "introduction": {
+    "title": "Hi, ik ben Nick.",
+    "about1": "Ik ben 23 jaar en woon in Rotterdam. Mijn passie voor creëren begon al in mijn kindertijd, toen ik urenlang bouwde met LEGO. Later verruilde ik fysieke blokjes voor digitale werelden in Minecraft, waarin ik met evenveel plezier mijn creativiteit de vrije loop liet. In mijn tienerjaren ontdekte ik de kracht van programmeren en hoe je met code iets moois én functioneels kunt bouwen.",
+    "about2": "Die fascinatie voor technologie is altijd gebleven. Na informatica aan de Universiteit Utrecht te hebben gestudeerd, heb ik van mijn hobby mijn beroep kunnen maken."
+  },
+
+  "portfolio": {
+    "subtext1": "In de afgelopen jaren heb ik gewerkt aan verscheidene projecten.",
+    "subtext2": "Hieronder toon ik een paar highlights en persoonlijke favorieten."
+  },
+
   "projects": {
     "eos": {
-      "description": "Echoes of the Shattering is een turn-based strategisch kaartspel waarin spelers unieke decks maken, uithoudingsvermogen en tactiek in balans houden en vijanden verslaan in intense gevechten. Verken een wereld vol mysterie en ontrafel de geheimen achter de Shattering."
+      "type": "Persoonlijk, Game",
+      "description": "Echoes of the Shattering is een turn-based strategisch kaartspel waarin spelers unieke decks maken, uithoudingsvermogen en tactiek in balans houden en vijanden verslaan in intense gevechten. Verken een wereld vol mysterie en ontrafel de geheimen achter de Shattering.",
+      "status": "Beta, On hold"
     },
     "tommy": {
-      "description": "TOMMY is een topic modelling applicatie die ontwikkeld is door studenten van de Universiteit Utrecht in opdracht van EMMA. Voor het uitvoeren van topic modelling wordt het achterliggende Latent Dirichlet Allocation (LDA) algoritme of Non-Negative Matrix Factorization (NMF) algoritme uitgevoerd op de door de gebruiker aangeleverde bestanden. "
+      "type": "Universiteitsproject, Desktopapplicatie",
+      "description": "TOMMY is een topic modelling applicatie die ontwikkeld is door studenten van de Universiteit Utrecht in opdracht van EMMA. Voor het uitvoeren van topic modelling wordt het achterliggende Latent Dirichlet Allocation (LDA) algoritme of Non-Negative Matrix Factorization (NMF) algoritme uitgevoerd op de door de gebruiker aangeleverde bestanden. ",
+      "status": "Afgerond"
     },
     "ooak": {
-      "description": "The Odyssey of a Knight: Into the Retro-Verse is een 2D-platformer die een eerbetoon is aan klassiekers zoals Super Mario Bros. en retro gaming. Ontwikkeld voor de Summer of Gamedev Game Jam, neemt het spelers mee naar een levendige Retro-Verse vol sprongen, power-ups en vijanden die herinneren aan het gouden tijdperk van games. Stap in deze gepixeleerde tijdscapsule en herontdek de magie van retro gaming!"
+      "type": "Persoonlijk, Game",
+      "description": "The Odyssey of a Knight: Into the Retro-Verse is een 2D-platformer die een eerbetoon is aan klassiekers zoals Super Mario Bros. en retro gaming. Ontwikkeld voor de Summer of Gamedev Game Jam, neemt het spelers mee naar een levendige Retro-Verse vol sprongen, power-ups en vijanden die herinneren aan het gouden tijdperk van games. Stap in deze gepixeleerde tijdscapsule en herontdek de magie van retro gaming!",
+      "status": "Afgerond"
     },
     "monozenith": {
-      "description": "MonoZenith is een lichte wrapper voor MonoGame, ontworpen om de game-ontwikkeling met C# te stroomlijnen."
+      "type": "Persoonlijk, Game framework",
+      "description": "MonoZenith is een lichte wrapper voor MonoGame, ontworpen om de game-ontwikkeling met C# te stroomlijnen.",
+      "status": "Sporadisch onderhoud"
     },
     "slitherzenith": {
-      "description": "SlitherZenith is een lichte wrapper voor PyGame, ontworpen om de game-ontwikkeling met Python te stroomlijnen."
+      "type": "Persoonlijk, Game framework",
+      "description": "SlitherZenith is een lichte wrapper voor PyGame, ontworpen om de game-ontwikkeling met Python te stroomlijnen.",
+      "status": "Sporadisch onderhoud"
     },
     "overflowsim": {
-      "description": "OverflowSim is een model dat gebruikt kan worden om dijkdoorbraken te simuleren. Het bevat de benodigde tools om te berekenen op welk moment een dijk van een bepaalde hoogte zal overstromen in een specifiek scenario. Het simulatiemodel werd oorspronkelijk ontwikkeld om bij te dragen aan het onderzoek naar dijkdoorbraken voor de cursus Onderzoeksmethoden aan de Universiteit Utrecht. De applicatie is gemaakt met C# (.NET6) en WinForms."
+      "type": "Universiteitsproject, Desktopapplicatie",
+      "description": "OverflowSim is een model dat gebruikt kan worden om dijkdoorbraken te simuleren. Het bevat de benodigde tools om te berekenen op welk moment een dijk van een bepaalde hoogte zal overstromen in een specifiek scenario. Het simulatiemodel werd oorspronkelijk ontwikkeld om bij te dragen aan het onderzoek naar dijkdoorbraken voor de cursus Onderzoeksmethoden aan de Universiteit Utrecht. De applicatie is gemaakt met C# (.NET6) en WinForms.",
+      "status": "Afgerond"
     },
     "found": {
-      "description": "Found is een 2D platformer game, gemaakt in Unity. In New Moon staat een gigantische, gesloten deur, met daarachter de zin van het leven. Het doel van het spel: vind de sleutels en open de deur. De speler kan sleutels verkrijgen door burgers van de stad te leren kennen en hun levels te voltooien."
+      "type": "Persoonlijk, Game",
+      "description": "Found is een 2D platformer game, gemaakt in Unity. In New Moon staat een gigantische, gesloten deur, met daarachter de zin van het leven. Het doel van het spel: vind de sleutels en open de deur. De speler kan sleutels verkrijgen door burgers van de stad te leren kennen en hun levels te voltooien.",
+      "status": "Afgerond"
     }
   }
 }

@@ -9,7 +9,7 @@
 
 <style scoped>
 .motto {
-  background-image: url('../../public/backdrops/motto.jpg');
+  background-image: url('/backdrops/motto.jpg');
   background-size: cover;
   background-position: center;
   display: flex;

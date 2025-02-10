@@ -6,8 +6,10 @@ import ProjectContainer from './ProjectContainer.vue'
   <div class="portfolio">
     <div class="container portfolio-content">
       <h2>Portfolio</h2>
-      <p>In de afgelopen jaren heb ik gewerkt aan verscheidene projecten.<br />
-        Hieronder toon ik een paar highlights en persoonlijke favorieten.</p>
+      <p>
+        {{ $t('portfolio.subtext1') }}<br />
+        {{ $t('portfolio.subtext2') }}
+      </p>
     </div>
     <ProjectContainer />
   </div>
