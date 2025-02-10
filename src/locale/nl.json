@@ -46,5 +46,10 @@
       "description": "Found is een 2D platformer game, gemaakt in Unity. In New Moon staat een gigantische, gesloten deur, met daarachter de zin van het leven. Het doel van het spel: vind de sleutels en open de deur. De speler kan sleutels verkrijgen door burgers van de stad te leren kennen en hun levels te voltooien.",
       "status": "Afgerond"
     }
+  },
+
+  "techstack": {
+    "title": "Gereedschappen",
+    "description": "Een aantal technologieën waar ik ervaring mee heb."
   }
 }

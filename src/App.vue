@@ -4,6 +4,7 @@ import HeroSection from '@/components/HeroSection.vue'
 import IntroductionSection from '@/components/IntroductionSection.vue'
 import MottoSection from '@/components/MottoSection.vue'
 import PortfolioSection from '@/components/Portfolio/PortfolioSection.vue'
+import TechStackSection from '@/components/TechStackSection.vue'
 import FooterSection from '@/components/FooterSection.vue'
 </script>
 
@@ -13,6 +14,7 @@ import FooterSection from '@/components/FooterSection.vue'
   <IntroductionSection />
   <MottoSection />
   <PortfolioSection />
+  <TechStackSection />
   <FooterSection />
 </template>
 

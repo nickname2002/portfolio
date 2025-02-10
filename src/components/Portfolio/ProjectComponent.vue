@@ -10,6 +10,7 @@ import 'vue-material-design-icons/styles.css';
 
 import { ref } from 'vue'
 
+// TODO: Implement (optional) props for GitHub, Itch.io and YouTube referencess
 const props = defineProps<{
   iconUrl: string
   name: string

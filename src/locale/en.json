@@ -32,5 +32,10 @@
     "found": {
       "description": "Found is a 2D platformer game, made in Unity. In New Moon, there is a gigantic, closed door, behind which lies the meaning of life. The goal of the game: find the keys and open the door. The player can obtain keys by getting to know the citizens of the city and completing their levels."
     }
+  },
+
+  "techstack": {
+    "title": "Tools",
+    "description": "A selection of technologies I have experience with."
   }
 }
