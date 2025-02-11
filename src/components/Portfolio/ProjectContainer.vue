@@ -7,7 +7,7 @@ import ProjectComponent from './ProjectComponent.vue'
     <div class="container project-content">
       <!-- Echoes of the Shattering -->
       <ProjectComponent
-        icon-url="/project_icons/eos.png"
+        icon-url="./project_icons/eos.png"
         name="Echoes of the Shattering"
         :description="$t('projects.eos.description')"
         :type="$t('projects.eos.type')"
@@ -21,7 +21,7 @@ import ProjectComponent from './ProjectComponent.vue'
 
       <!-- TOMMY -->
       <ProjectComponent
-        icon-url="/project_icons/tommy.png"
+        icon-url="./project_icons/tommy.png"
         name="TOMMY"
         :description="$t('projects.tommy.description')"
         :type="$t('projects.tommy.type')"
@@ -35,7 +35,7 @@ import ProjectComponent from './ProjectComponent.vue'
 
       <!-- The Odyssey of a Knight: Into the Retro-Verse -->
       <ProjectComponent
-        icon-url="/project_icons/ooak.png"
+        icon-url="./project_icons/ooak.png"
         name="The Odyssey of a Knight: Into the Retro-Verse"
         :description="$t('projects.ooak.description')"
         :type="$t('projects.ooak.type')"
@@ -49,7 +49,7 @@ import ProjectComponent from './ProjectComponent.vue'
 
       <!-- MonoZenith -->
       <ProjectComponent
-        icon-url="/project_icons/monozenith.png"
+        icon-url="./project_icons/monozenith.png"
         name="MonoZenith"
         :description="$t('projects.monozenith.description')"
         :type="$t('projects.monozenith.type')"
@@ -62,7 +62,7 @@ import ProjectComponent from './ProjectComponent.vue'
 
       <!-- SlitherZenith -->
       <ProjectComponent
-        icon-url="/project_icons/slitherzenith.png"
+        icon-url="./project_icons/slitherzenith.png"
         name="SlitherZenith"
         :description="$t('projects.slitherzenith.description')"
         :type="$t('projects.slitherzenith.type')"
@@ -75,7 +75,7 @@ import ProjectComponent from './ProjectComponent.vue'
 
       <!-- OverflowSim -->
       <ProjectComponent
-        icon-url="/project_icons/overflowsim.png"
+        icon-url="./project_icons/overflowsim.png"
         name="OverflowSim"
         :description="$t('projects.overflowsim.description')"
         :type="$t('projects.overflowsim.type')"
@@ -88,7 +88,7 @@ import ProjectComponent from './ProjectComponent.vue'
 
       <!-- Found -->
       <ProjectComponent
-        icon-url="/project_icons/found.png"
+        icon-url="./project_icons/found.png"
         name="Found"
         :description="$t('projects.found.description')"
         :type="$t('projects.found.type')"
