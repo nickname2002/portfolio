@@ -10,7 +10,6 @@ import 'vue-material-design-icons/styles.css';
 
 import { ref } from 'vue'
 
-// TODO: Implement (optional) props for GitHub, Itch.io and YouTube referencess
 const props = defineProps<{
   iconUrl: string
   name: string
@@ -20,6 +19,9 @@ const props = defineProps<{
   status: string
   devPeriod: string
   tools: string
+  youtubeUrl?: string
+  githubUrl?: string
+  itchUrl?: string
 }>()
 
 const viewProjectDescription = ref(false);
@@ -66,6 +68,17 @@ function toggleProjectDescription() {
       <transition name="slide-fade">
         <div v-if="viewProjectDescription" class="project-description">
           <p>{{ props.description }}</p>
+          <div class="sources">
+            <a v-if="props.youtubeUrl" :href="props.youtubeUrl">
+              <img src="/project_icons/source_icons/youtube.png" alt="YouTube" />
+            </a>
+            <a v-if="props.githubUrl" :href="props.githubUrl">
+              <img src="/project_icons/source_icons/github.png" alt="GitHub" />
+            </a>
+            <a v-if="props.itchUrl" :href="props.itchUrl">
+              <img src="/project_icons/source_icons/itch.png" alt="Itch.io" />
+            </a>
+          </div>
         </div>
       </transition>
     </div>
@@ -200,5 +213,24 @@ function toggleProjectDescription() {
 
 .chevron.rotate {
   transform: rotate(180deg);
+}
+
+.sources {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+}
+
+.sources img {
+  width: 25px;
+  height: 25px;
+  margin-top: 1rem;
+  transition: transform 0.3s ease, filter 0.3s ease;
+  opacity: 0.7;
+}
+
+.sources img:hover {
+  transform: scale(1.15);
+  opacity: 1;
 }
 </style>

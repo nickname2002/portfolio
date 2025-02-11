@@ -15,6 +15,8 @@ import ProjectComponent from './ProjectComponent.vue'
         :status="$t('projects.eos.status')"
         devPeriod="09/2024 - 2/2025"
         tools="MonoZenith, C#"
+        github-url="https://github.com/nickname2002/echoes-of-the-shattering"
+        itch-url="https://nickname02.itch.io/echoes-of-the-shattering"
       />
 
       <!-- TOMMY -->
@@ -27,6 +29,8 @@ import ProjectComponent from './ProjectComponent.vue'
         :status="$t('projects.tommy.status')"
         devPeriod="02/2024 - 07/2024"
         tools="Python, Qt for Python"
+        youtube-url="https://www.youtube.com/watch?v=tR3nvTx4d-w"
+        github-url="https://github.com/Top-Models/TOMMY"
       />
 
       <!-- The Odyssey of a Knight: Into the Retro-Verse -->
@@ -39,6 +43,8 @@ import ProjectComponent from './ProjectComponent.vue'
         :status="$t('projects.ooak.status')"
         devPeriod="07/2023 - 08/2023 (6 weken)"
         tools="SlitherZenith, Python"
+        github-url="https://github.com/nickname2002/the-odyssey-of-a-knight-into-the-retroverse"
+        itch-url="https://nickname02.itch.io/the-odyssey-of-a-knight-into-the-retro-verse"
       />
 
       <!-- MonoZenith -->
@@ -51,6 +57,7 @@ import ProjectComponent from './ProjectComponent.vue'
         :status="$t('projects.monozenith.status')"
         devPeriod="09/2022 - Heden"
         tools="MonoGame, C#"
+        github-url="https://github.com/nickname2002/MonoZenith"
       />
 
       <!-- SlitherZenith -->
@@ -63,6 +70,7 @@ import ProjectComponent from './ProjectComponent.vue'
         :status="$t('projects.slitherzenith.status')"
         devPeriod="07/2022 - Heden"
         tools="Pygame, Python"
+        github-url="https://github.com/nickname2002/SlitherZenith"
       />
 
       <!-- OverflowSim -->
@@ -75,6 +83,7 @@ import ProjectComponent from './ProjectComponent.vue'
         :status="$t('projects.overflowsim.status')"
         devPeriod="03/2023 - 04/2023"
         tools="Windows Forms, C#"
+        github-url="https://github.com/nickname2002/DikeOverflowModel"
       />
 
       <!-- Found -->
@@ -87,6 +96,8 @@ import ProjectComponent from './ProjectComponent.vue'
         :status="$t('projects.found.status')"
         devPeriod="06/2020 - 09/2020"
         tools="Unity, C#"
+        itch-url="https://nickname02.itch.io/found"
+        github-url="https://github.com/nickname2002/Found"
       />
     </div>
   </div>
