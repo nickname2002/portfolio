@@ -7,7 +7,8 @@
 
   "portfolio": {
     "subtext1": "In de afgelopen jaren heb ik gewerkt aan verscheidene projecten.",
-    "subtext2": "Hieronder toon ik een paar highlights en persoonlijke favorieten."
+    "subtext2": "Hieronder toon ik een paar highlights en persoonlijke favorieten.",
+    "subtext3": "Of neem een kijkje op mijn andere kanalen:"
   },
 
   "projects": {
@@ -51,5 +52,10 @@
   "techstack": {
     "title": "Gereedschappen",
     "description": "Een aantal technologieën waar ik ervaring mee heb."
+  },
+
+  "contact": {
+    "title": "Neem gerust contact op!",
+    "subtitle": "Houd er rekening mee dat ik momenteel niet op zoek ben naar nieuwe carrièrekansen."
   }
 }

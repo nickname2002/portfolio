@@ -79,6 +79,8 @@
 }
 
 .category {
+  display: flex;
+  flex-direction: column;
   padding: 1.5rem;
   font-family: 'Futura', sans-serif;
 }

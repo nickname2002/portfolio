@@ -7,7 +7,8 @@
 
   "portfolio": {
     "subtext1": "In recent years, I have worked on several projects.",
-    "subtext2": "Below, I showcase a few highlights and personal favorites."
+    "subtext2": "Below, I showcase a few highlights and personal favorites.",
+    "subtext3": "Or take a look at my other channels:"
   },
 
   "projects": {
@@ -37,5 +38,10 @@
   "techstack": {
     "title": "Tools",
     "description": "A selection of technologies I have experience with."
+  },
+
+  "contact": {
+      "title": "Feel free to reach out!",
+      "subtitle": "Please note I am currently not looking for new career opportunities."
   }
 }

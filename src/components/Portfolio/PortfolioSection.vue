@@ -10,6 +10,15 @@ import ProjectContainer from './ProjectContainer.vue'
         {{ $t('portfolio.subtext1') }}<br />
         {{ $t('portfolio.subtext2') }}
       </p>
+      <p>{{ $t('portfolio.subtext3') }}</p>
+      <div class="project-channels">
+        <a href="https://github.com/nickname2002">
+          <img class="social-icon" src="/portfolio_icons/github.png" alt="GitHub" />
+        </a>
+        <a href="https://nickname02.itch.io">
+          <img class="social-icon" src="/portfolio_icons/itch.png" alt="Itch.io" />
+        </a>
+      </div>
     </div>
     <ProjectContainer />
   </div>
@@ -30,5 +39,23 @@ import ProjectContainer from './ProjectContainer.vue'
 .portfolio-content p {
   text-align: center;
   font-family: 'Nunito Sans', sans-serif;
+}
+
+.project-channels {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  padding-top: 2rem;
+}
+
+.social-icon {
+  width: 50px;
+  height: 50px;
+  transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.social-icon:hover {
+  transform: scale(1.1);
+  filter: brightness(1.1);
 }
 </style>
