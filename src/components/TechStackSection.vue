@@ -11,44 +11,44 @@
         <!-- Languages -->
         <div class="category">
           <h2>Talen</h2>
-          <a href="https://www.python.org/"><img src="../../tech_stack_icons/python.png" alt="Python" /></a>
-          <a href="https://learn.microsoft.com/en-us/dotnet/csharp/"><img src="../../tech_stack_icons/csharp.png" alt="C#" /></a>
-          <a href="#"><img src="../../tech_stack_icons/web.png" alt="Web" /></a>
-          <a href="https://cplusplus.com/"><img src="../../tech_stack_icons/cplusplus.png" alt="C++" /></a>
+          <a href="https://www.python.org/"><img src="/tech_stack_icons/python.png" alt="Python" /></a>
+          <a href="https://learn.microsoft.com/en-us/dotnet/csharp/"><img src="/tech_stack_icons/csharp.png" alt="C#" /></a>
+          <a href="#"><img src="/tech_stack_icons/web.png" alt="Web" /></a>
+          <a href="https://cplusplus.com/"><img src="/tech_stack_icons/cplusplus.png" alt="C++" /></a>
         </div>
 
         <!-- Frameworks -->
         <div class="category">
           <h2>Frameworks</h2>
-          <a href="https://monogame.net/"><img src="../../tech_stack_icons/monogame.png" alt="MonoGame" /></a>
-          <a href="https://dotnet.microsoft.com/en-us/learn/aspnet/what-is-aspnet"><img src="../../tech_stack_icons/dotnet.png" alt="ASP.NET" /></a>
-          <a href="https://vuejs.org/"><img src="../../tech_stack_icons/vue.png" alt="Vue" /></a>
-          <a href="https://getbootstrap.com/"><img src="../../tech_stack_icons/bootstrap.png" alt="Bootstrap" /></a>
+          <a href="https://monogame.net/"><img src="/tech_stack_icons/monogame.png" alt="MonoGame" /></a>
+          <a href="https://dotnet.microsoft.com/en-us/learn/aspnet/what-is-aspnet"><img src="/tech_stack_icons/dotnet.png" alt="ASP.NET" /></a>
+          <a href="https://vuejs.org/"><img src="/tech_stack_icons/vue.png" alt="Vue" /></a>
+          <a href="https://getbootstrap.com/"><img src="/tech_stack_icons/bootstrap.png" alt="Bootstrap" /></a>
         </div>
 
         <!-- DevOps -->
         <div class="category">
           <h2>DevOps</h2>
-          <a href="https://github.com/"><img src="../../tech_stack_icons/github.png" alt="GitHub" /></a>
-          <a href="https://www.gitkraken.com/"><img src="../../tech_stack_icons/gitkraken.png" alt="GitKraken" /></a>
-          <a href="https://about.gitlab.com/"><img src="../../tech_stack_icons/gitlab.png" alt="GitLab" /></a>
-          <a href="https://www.atlassian.com/nl/software/jira"><img src="../../tech_stack_icons/jira.png" alt="Jira" /></a>
+          <a href="https://github.com/"><img src="/tech_stack_icons/github.png" alt="GitHub" /></a>
+          <a href="https://www.gitkraken.com/"><img src="/tech_stack_icons/gitkraken.png" alt="GitKraken" /></a>
+          <a href="https://about.gitlab.com/"><img src="/tech_stack_icons/gitlab.png" alt="GitLab" /></a>
+          <a href="https://www.atlassian.com/nl/software/jira"><img src="/tech_stack_icons/jira.png" alt="Jira" /></a>
         </div>
 
         <!-- AI -->
         <div class="category">
           <h2>AI</h2>
-          <a href="https://chatgpt.com/"><img src="../../tech_stack_icons/chatgpt.png" alt="ChatGPT" /></a>
-          <a href="https://github.com/features/copilot"><img src="../../tech_stack_icons/copilot.png" alt="GitHub CoPilot" /></a>
+          <a href="https://chatgpt.com/"><img src="/tech_stack_icons/chatgpt.png" alt="ChatGPT" /></a>
+          <a href="https://github.com/features/copilot"><img src="/tech_stack_icons/copilot.png" alt="GitHub CoPilot" /></a>
         </div>
 
         <!-- Miscellaneous -->
         <div class="category">
           <h2>Overig</h2>
-          <a href="https://www.jetbrains.com/rider/"><img src="../../tech_stack_icons/rider.png" alt="Rider" /></a>
-          <a href="https://visualstudio.microsoft.com/"><img src="../../tech_stack_icons/vs.png" alt="Visual Studio" /></a>
-          <a href="https://code.visualstudio.com/"><img src="../../tech_stack_icons/vscode.png" alt="Visual Studio Code" /></a>
-          <a href="https://www.figma.com/"><img src="../../tech_stack_icons/figma.png" alt="Figma" /></a>
+          <a href="https://www.jetbrains.com/rider/"><img src="/tech_stack_icons/rider.png" alt="Rider" /></a>
+          <a href="https://visualstudio.microsoft.com/"><img src="/tech_stack_icons/vs.png" alt="Visual Studio" /></a>
+          <a href="https://code.visualstudio.com/"><img src="/tech_stack_icons/vscode.png" alt="Visual Studio Code" /></a>
+          <a href="https://www.figma.com/"><img src="/tech_stack_icons/figma.png" alt="Figma" /></a>
         </div>
       </div>
     </div>

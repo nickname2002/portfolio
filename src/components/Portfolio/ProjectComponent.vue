@@ -1,12 +1,6 @@
 <script setup lang="ts">
-import mdiShapePlusIcon from 'vue-material-design-icons/ShapePlus.vue';
-import mdiAccountGroupIcon from 'vue-material-design-icons/AccountGroup.vue';
-import mdiListStatusIcon from 'vue-material-design-icons/ListStatus.vue';
-import mdiClockTimeEightOutlineIcon from 'vue-material-design-icons/ClockTimeEightOutline.vue';
-import mdiHammerWrenchIcon from 'vue-material-design-icons/HammerWrench.vue';
-import mdiChevronDownIcon from 'vue-material-design-icons/ChevronDown.vue';
-
-import 'vue-material-design-icons/styles.css';
+import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
+import { faPlus, faUsers, faList, faClock, faWrench, faChevronDown } from '@fortawesome/free-solid-svg-icons'
 
 import { ref } from 'vue'
 
@@ -49,19 +43,20 @@ function toggleProjectDescription() {
         <!-- Metadata -->
         <div class="project-metadata-container">
           <p class="project-name"><strong>{{ props.name }}</strong></p>
-          <p class="project-type"><mdiShapePlusIcon /> {{ props.type }}</p>
-          <p class="project-collaborators"><mdiAccountGroupIcon /> {{ props.collaborators }}</p>
-          <p class="project-status"><mdiListStatusIcon /> {{ props.status }}</p>
-          <p class="project-dev-period"><mdiClockTimeEightOutlineIcon/> {{ props.devPeriod }}</p>
-          <p class="project-tools"><mdiHammerWrenchIcon /> {{ props.tools }}</p>
+          <p class="project-type"><font-awesome-icon class="icon" :icon="faPlus" /> {{ props.type }}</p>
+          <p class="project-collaborators"><font-awesome-icon class="icon" :icon="faUsers" /> {{ props.collaborators }}</p>
+          <p class="project-status"><font-awesome-icon class="icon" :icon="faList" /> {{ props.status }}</p>
+          <p class="project-dev-period"><font-awesome-icon class="icon" :icon="faClock" /> {{ props.devPeriod }}</p>
+          <p class="project-tools"><font-awesome-icon class="icon" :icon="faWrench" /> {{ props.tools }}</p>
         </div>
       </div>
 
       <!-- Arrow icon on hover to indicate that the user can click on the project -->
-      <mdiChevronDownIcon
+      <font-awesome-icon
         class="chevron"
+        :icon="faChevronDown"
         :class="{ rotate: viewProjectDescription }"
-        style="font-size: 2rem; color: #333;"
+        style="font-size: 1.25rem; color: #333;"
       />
 
       <!-- Project Description -->
@@ -163,12 +158,8 @@ function toggleProjectDescription() {
   font-size: 1.1rem;
 }
 
-.project-type mdiShapePlusIcon,
-.project-collaborators mdiAccountGroupIcon,
-.project-status mdiListStatusIcon,
-.project-dev-period mdiClockTimeEightOutlineIcon,
-.project-tools mdiHammerWrenchIcon {
-  font-size: 1.5rem;
+.icon {
+  font-size: 0.9rem;
 }
 
 .initial-view {
