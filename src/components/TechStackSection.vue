@@ -1,9 +1,15 @@
 <script setup lang="ts">
+import { computed } from 'vue'
+import { useDarkMode } from '@/composables/useDarkMode'
 
+const { darkmodeEnabled } = useDarkMode()
+
+const techStackClass = computed(() => darkmodeEnabled.value ? 'tech-stack-container dark' : 'tech-stack-container light')
+const githubIconClass = computed(() => darkmodeEnabled.value ? 'source-icon dark' : 'source-icon')
 </script>
 
 <template>
-  <div class="tech-stack-container">
+  <div :class="techStackClass">
     <div class="container tech-stack-content">
       <h1 class="title">{{ $t('techstack.title') }}</h1>
       <h3 class="subtitle">{{ $t('techstack.description') }}</h3>
@@ -29,7 +35,7 @@
         <!-- DevOps -->
         <div class="category">
           <h2>DevOps</h2>
-          <a href="https://github.com/"><img src="/tech_stack_icons/github.png" alt="GitHub" /></a>
+          <a href="https://github.com/"><img :class="githubIconClass" src="/tech_stack_icons/github.png" alt="GitHub" /></a>
           <a href="https://www.gitkraken.com/"><img src="/tech_stack_icons/gitkraken.png" alt="GitKraken" /></a>
           <a href="https://about.gitlab.com/"><img src="/tech_stack_icons/gitlab.png" alt="GitLab" /></a>
           <a href="https://www.atlassian.com/nl/software/jira"><img src="/tech_stack_icons/jira.png" alt="Jira" /></a>
@@ -56,6 +62,20 @@
 </template>
 
 <style scoped>
+.tech-stack-container {
+  transition: background-color 0.5s ease, color 0.5s ease;
+}
+
+.tech-stack-container.light {
+  background-color: #ffffff;
+  color: #000000;
+}
+
+.tech-stack-container.dark {
+  background-color: #2c2f33;
+  color: #ffffff;
+}
+
 .title {
   font-size: 2.5rem;
   font-family: 'Jost', sans-serif;
@@ -109,6 +129,10 @@
 
 .tools a:active {
   transform: scale(0.98);
+}
+
+.source-icon.dark {
+  filter: invert(1);
 }
 
 @media (max-width: 768px) {

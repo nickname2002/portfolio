@@ -1,9 +1,17 @@
 <script setup lang="ts">
 import ProjectComponent from './ProjectComponent.vue'
+import { computed } from 'vue'
+import { useDarkMode } from '@/composables/useDarkMode'
+
+const { darkmodeEnabled } = useDarkMode()
+
+const projectContainerClass = computed(() => darkmodeEnabled.value
+  ? 'project-container dark'
+  : 'project-container light')
 </script>
 
 <template>
-  <div class="project-container">
+  <div :class="projectContainerClass">
     <div class="container project-content">
       <!-- Echoes of the Shattering -->
       <ProjectComponent
@@ -107,10 +115,23 @@ import ProjectComponent from './ProjectComponent.vue'
 .project-container {
   padding-top: 1rem;
   padding-bottom: 1rem;
-  background-color: lightgray;
   background-image: url('/backdrops/mountains.jpg');
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
+  position: relative;
+  transition: background-color 0.5s ease;
+  z-index: 0;
+}
+
+.project-container.dark::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+  z-index: -1;
 }
 </style>

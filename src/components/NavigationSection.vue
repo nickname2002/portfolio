@@ -1,9 +1,12 @@
 <script setup lang="ts">
-import { computed } from 'vue'
+import { computed, ref, onMounted } from 'vue'
 import { useI18n } from 'vue-i18n'
-import { onMounted, ref } from 'vue'
+import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
+import { faSun, faMoon } from '@fortawesome/free-solid-svg-icons'
+import { useDarkMode } from '@/composables/useDarkMode'
 
 const { locale } = useI18n()
+const { darkmodeEnabled, toggleDarkMode } = useDarkMode()
 
 const isClicked = ref(false)
 
@@ -16,10 +19,12 @@ onMounted(() => {
     locale.value = browserLang
     localStorage.setItem('language', browserLang)
   }
-});
+})
 
 const chosenLanguage = computed(() => locale.value)
 const langIcon = computed(() => (chosenLanguage.value === 'nl' ? '🇳🇱' : '🇬🇧'))
+const navbarClass = computed(() => darkmodeEnabled.value ? 'navbar navbar-dark' : 'navbar navbar-light')
+const iconColor = computed(() => darkmodeEnabled.value ? 'white' : '#343a40')
 
 function toggleLanguage() {
   isClicked.value = true
@@ -32,7 +37,7 @@ function toggleLanguage() {
 </script>
 
 <template>
-  <nav class="navbar navbar-expand-lg bg-light px-3">
+  <nav :class="navbarClass" class="navbar-expand-lg px-3">
     <div class="container container-fluid">
       <!-- Site title -->
       <div class="site-title">
@@ -42,6 +47,13 @@ function toggleLanguage() {
 
       <!-- Settings -->
       <div class="settings">
+        <!-- Dark mode -->
+        <button class="btn" @click="toggleDarkMode">
+          <font-awesome-icon :style="{ color: iconColor }" v-if="!darkmodeEnabled" class="color-theme" :icon="faSun" />
+          <font-awesome-icon :style="{ color: iconColor }" v-else class="color-theme" :icon="faMoon" />
+        </button>
+
+        <!-- Language -->
         <button
           class="btn lang-button"
           @click="toggleLanguage"
@@ -54,8 +66,23 @@ function toggleLanguage() {
 </template>
 
 <style scoped>
+body {
+  transition: background-color 0.5s ease, color 0.5s ease;
+}
+
 .navbar {
   min-height: 75px;
+  transition: background-color 0.5s ease, color 0.5s ease;
+}
+
+.navbar-light {
+  background-color: #f8f9fa;
+  color: black;
+}
+
+.navbar-dark {
+  background-color: #343a40;
+  color: white;
 }
 
 .site-title {
@@ -64,7 +91,7 @@ function toggleLanguage() {
 }
 
 .navbar-brand {
-  color: black;
+  color: inherit;
   text-decoration: none;
   font-family: 'Jost', sans-serif;
 }
@@ -96,6 +123,17 @@ function toggleLanguage() {
 
 .lang {
   font-size: 1.75rem;
+}
+
+.color-theme {
+  margin-right: 1rem;
+  font-size: 1.5rem;
+  transition: transform 0.15s ease-in-out;
+  display: flex;
+}
+
+.color-theme:hover {
+  transform: scale(1.2);
 }
 
 @media (max-width: 768px) {

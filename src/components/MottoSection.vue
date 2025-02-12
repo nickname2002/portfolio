@@ -1,11 +1,20 @@
 <template>
-  <div class="motto">
+  <div :class="mottoClass">
     <div class="container motto-content">
       <h2>“To infinity, and beyond!”</h2>
       <p>— Buzz Lightyear</p>
     </div>
   </div>
 </template>
+
+<script setup lang="ts">
+import { computed } from 'vue'
+import { useDarkMode } from '@/composables/useDarkMode'
+
+const { darkmodeEnabled } = useDarkMode()
+
+const mottoClass = computed(() => darkmodeEnabled.value ? 'motto dark' : 'motto light')
+</script>
 
 <style scoped>
 .motto {
@@ -15,6 +24,20 @@
   display: flex;
   background-attachment: fixed;
   background-repeat: no-repeat;
+  position: relative;
+  transition: background-color 0.5s ease;
+  z-index: 0;
+}
+
+.motto.dark::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+  z-index: -1;
 }
 
 .motto-content {
