@@ -110,4 +110,28 @@
 .tools a:active {
   transform: scale(0.98);
 }
+
+@media (max-width: 768px) {
+  .title {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+
+  .subtitle {
+    font-size: 1.25rem;
+    margin-left: 2rem;
+    margin-right: 2rem;
+  }
+
+  .tools {
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
+    padding-bottom: 2rem;
+  }
+
+  .category {
+    margin: 0;
+  }
+}
 </style>

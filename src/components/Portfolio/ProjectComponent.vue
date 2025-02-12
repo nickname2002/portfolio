@@ -37,9 +37,6 @@ function toggleProjectDescription() {
           <img :src="props.iconUrl" :alt="props.name" />
         </div>
 
-        <!-- Dividing line vertically -->
-        <div class="divider"></div>
-
         <!-- Metadata -->
         <div class="project-metadata-container">
           <p class="project-name"><strong>{{ props.name }}</strong></p>
@@ -223,5 +220,76 @@ function toggleProjectDescription() {
 .sources img:hover {
   transform: scale(1.15);
   opacity: 1;
+}
+
+@media (max-width: 768px) {
+  .project-container {
+    padding: 2rem;
+  }
+
+  .project-content {
+    padding: 20px;
+    gap: 0.5rem;
+  }
+
+  .project-icon-container img {
+    width: 150px;
+    height: 150px;
+    margin-left: 1rem;
+  }
+
+  .initial-view {
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  .divider {
+    width: 100%;
+    height: 2px;
+    margin: 1rem 0;
+  }
+
+  .project-metadata-container {
+    text-align: center;
+    max-width: 80%;
+    overflow: auto;
+  }
+
+  .project-metadata-container p {
+    font-size: 1rem;
+  }
+
+  .project-name {
+    font-size: 1.2rem;
+  }
+
+  .project-type,
+  .project-collaborators,
+  .project-status,
+  .project-dev-period,
+  .project-tools {
+    font-size: 1rem;
+  }
+
+  .chevron {
+    font-size: 1rem;
+  }
+
+  .sources img {
+    width: 30px;
+    height: 30px;
+  }
+
+  .project-metadata-container p {
+    font-size: 1rem;
+    word-wrap: break-word;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+
+  .project-description {
+    font-size: 1rem;
+  }
 }
 </style>

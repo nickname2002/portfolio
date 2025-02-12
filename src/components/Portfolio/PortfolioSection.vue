@@ -58,4 +58,21 @@ import ProjectContainer from './ProjectContainer.vue'
   transform: scale(1.1);
   filter: brightness(1.1);
 }
+
+@media (max-width: 768px) {
+  .portfolio-content h2 {
+    font-size: 2rem;
+  }
+
+  .portfolio-content p {
+    font-size: 1rem;
+    margin-left: 2rem;
+    margin-right: 2rem;
+  }
+
+  .social-icon {
+    width: 50px;
+    height: 50px;
+  }
+}
 </style>

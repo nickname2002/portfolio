@@ -40,19 +40,6 @@ function toggleLanguage() {
         <span class="navbar-brand">Nick Jordan</span>
       </div>
 
-      <!-- Mobile toggler -->
-      <button
-        class="navbar-toggler"
-        type="button"
-        data-bs-toggle="collapse"
-        data-bs-target="#navbarNav"
-        aria-controls="navbarNav"
-        aria-expanded="false"
-        aria-label="Toggle navigation"
-      >
-        <span class="navbar-toggler-icon"></span>
-      </button>
-
       <!-- Settings -->
       <div class="settings">
         <button
@@ -109,5 +96,31 @@ function toggleLanguage() {
 
 .lang {
   font-size: 1.75rem;
+}
+
+@media (max-width: 768px) {
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .site-title {
+    margin-bottom: 1rem;
+    padding-top: 1rem;
+  }
+
+  .portrait {
+    width: 50px;
+    height: 50px;
+  }
+
+  .navbar-brand {
+    font-size: 1.5rem;
+  }
+
+  .lang {
+    font-size: 2rem;
+  }
 }
 </style>

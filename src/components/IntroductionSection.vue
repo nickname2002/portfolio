@@ -36,4 +36,21 @@
 .introduction-content p {
   font-family: 'Nunito Sans', sans-serif;
 }
+
+@media (max-width: 768px) {
+  .portrait {
+    width: 100px;
+    height: 100px;
+  }
+
+  .introduction-content h1 {
+    font-size: 1.5rem;
+  }
+
+  .introduction-content p {
+    font-size: 1rem;
+    margin-left: 2rem;
+    margin-right: 2rem;
+  }
+}
 </style>

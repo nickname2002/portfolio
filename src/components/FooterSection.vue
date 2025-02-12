@@ -57,4 +57,21 @@
   padding-top: 10px;
   padding-bottom: 10px;
 }
+
+@media (max-width: 768px) {
+  .contact-section h2 {
+    font-size: 1.75rem;
+  }
+
+  .contact-section p {
+    font-size: 1rem;
+    margin-left: 2rem;
+    margin-right: 2rem;
+  }
+
+  .social-icon {
+    width: 50px;
+    height: 50px;
+  }
+}
 </style>

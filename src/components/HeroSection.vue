@@ -37,4 +37,15 @@
 .hero-content h3 {
   font-family: 'Nunito Sans', sans-serif;
 }
+
+@media (max-width: 768px) {
+  .hero-content h1 {
+    font-size: 250%;
+    padding-bottom: 20px;
+  }
+
+  .hero-content h3 {
+    font-size: 1.5rem;
+  }
+}
 </style>

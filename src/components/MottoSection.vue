@@ -34,4 +34,16 @@
   font-size: 1.5rem;
   font-family: 'Nunito Sans', sans-serif;
 }
+
+@media (max-width: 768px) {
+  .motto-content h2 {
+    margin-left: 2rem;
+  }
+
+  .motto-content p {
+    font-size: 1.25rem;
+    margin-left: 2rem;
+    margin-right: 2rem;
+  }
+}
 </style>
