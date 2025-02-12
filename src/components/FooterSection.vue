@@ -30,7 +30,7 @@
 
 .contact-section h2 {
   font-size: 2rem;
-  font-family: 'Futura', sans-serif;
+  font-family: 'Jost', sans-serif;
 }
 
 .contact-section p {
@@ -53,7 +53,7 @@
 
 .copyright {
   color: #333;
-  font-family: 'Futura', sans-serif;
+  font-family: 'Jost', sans-serif;
   padding-top: 10px;
   padding-bottom: 10px;
 }

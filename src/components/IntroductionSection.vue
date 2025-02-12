@@ -30,7 +30,7 @@
   font-size: 2rem;
   margin-bottom: 2rem;
   margin-top: 1rem;
-  font-family: 'Futura', sans-serif;
+  font-family: 'Jost', sans-serif;
 }
 
 .introduction-content p {

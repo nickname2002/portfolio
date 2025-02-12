@@ -79,7 +79,7 @@ function toggleLanguage() {
 .navbar-brand {
   color: black;
   text-decoration: none;
-  font-family: 'Futura', sans-serif;
+  font-family: 'Jost', sans-serif;
 }
 
 .portrait {

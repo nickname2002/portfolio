@@ -32,7 +32,7 @@ import ProjectContainer from './ProjectContainer.vue'
 
 .portfolio-content h2 {
   font-size: 3rem;
-  font-family: 'Futura', sans-serif;
+  font-family: 'Jost', sans-serif;
   text-align: center;
 }
 

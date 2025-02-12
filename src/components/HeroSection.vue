@@ -16,7 +16,7 @@
   justify-content: center;
   align-items: center;
   color: white;
-  font-family: 'Futura', sans-serif;
+  font-family: 'Jost', sans-serif;
   font-size: 2rem;
   text-align: center;
   background-attachment: fixed;

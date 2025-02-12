@@ -58,7 +58,7 @@
 <style scoped>
 .title {
   font-size: 2.5rem;
-  font-family: 'Futura', sans-serif;
+  font-family: 'Jost', sans-serif;
   text-align: center;
   padding-top: 4rem;
 }
@@ -82,7 +82,7 @@
   display: flex;
   flex-direction: column;
   padding: 1.5rem;
-  font-family: 'Futura', sans-serif;
+  font-family: 'Jost', sans-serif;
 }
 
 .category h2 {
