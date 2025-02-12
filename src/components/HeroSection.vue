@@ -1,5 +1,14 @@
+<script setup lang="ts">
+import { computed } from 'vue'
+import { useDarkMode } from '@/composables/useDarkMode'
+
+const { darkmodeEnabled } = useDarkMode()
+
+const heroClass = computed(() => darkmodeEnabled.value ? 'hero dark' : 'hero light')
+</script>
+
 <template>
-  <div class="hero">
+  <div :class="heroClass">
     <div class="hero-content">
       <h1>Nick Jordan</h1>
       <h3>Software Engineer & Game Developer</h3>
@@ -21,6 +30,20 @@
   text-align: center;
   background-attachment: fixed;
   min-height: calc(100vh - 75px);
+  transition: background-color 0.5s ease;
+  position: relative;
+  z-index: 0;
+}
+
+.hero.dark::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(1, 1, 1, 0.5);
+  z-index: -1;
 }
 
 .hero-content {

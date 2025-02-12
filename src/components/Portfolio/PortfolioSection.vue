@@ -1,9 +1,16 @@
 <script setup lang="ts">
+import { computed } from 'vue'
+import { useDarkMode } from '@/composables/useDarkMode'
 import ProjectContainer from './ProjectContainer.vue'
+
+const { darkmodeEnabled } = useDarkMode()
+
+const portfolioClass = computed(() => darkmodeEnabled.value ? 'portfolio dark' : 'portfolio light')
+const githubIconClass = computed(() => darkmodeEnabled.value ? 'social-icon github dark' : 'social-icon github')
 </script>
 
 <template>
-  <div class="portfolio">
+  <div :class="portfolioClass">
     <div class="container portfolio-content">
       <h2>Portfolio</h2>
       <p>
@@ -13,7 +20,7 @@ import ProjectContainer from './ProjectContainer.vue'
       <p>{{ $t('portfolio.subtext3') }}</p>
       <div class="project-channels">
         <a href="https://github.com/nickname2002">
-          <img class="social-icon" src="/portfolio_icons/github.png" alt="GitHub" />
+          <img :class="githubIconClass" src="/portfolio_icons/github.png" alt="GitHub" />
         </a>
         <a href="https://nickname02.itch.io">
           <img class="social-icon" src="/portfolio_icons/itch.png" alt="Itch.io" />
@@ -25,6 +32,20 @@ import ProjectContainer from './ProjectContainer.vue'
 </template>
 
 <style scoped>
+.portfolio {
+  transition: background-color 0.5s ease, color 0.5s ease;
+}
+
+.portfolio.light {
+  background-color: #ffffff;
+  color: #000000;
+}
+
+.portfolio.dark {
+  background-color: #343a40;
+  color: #ffffff;
+}
+
 .portfolio-content {
   padding-top: 6rem;
   padding-bottom: 6rem;
@@ -57,6 +78,10 @@ import ProjectContainer from './ProjectContainer.vue'
 .social-icon:hover {
   transform: scale(1.1);
   filter: brightness(1.1);
+}
+
+.github.dark {
+  filter: invert(1);
 }
 
 @media (max-width: 768px) {

@@ -1,5 +1,16 @@
+<script setup lang="ts">
+import { computed } from 'vue'
+import { useDarkMode } from '@/composables/useDarkMode'
+
+const { darkmodeEnabled } = useDarkMode()
+
+const introductionClass = computed(() => darkmodeEnabled.value
+  ? 'introduction dark'
+  : 'introduction light')
+</script>
+
 <template>
-  <div class="introduction">
+  <div :class="introductionClass">
     <div class="container introduction-content">
       <img class="portrait" src="../assets/portrait.jpg" alt="portrait" />
       <h1>{{ $t('introduction.title') }}</h1>
@@ -10,6 +21,20 @@
 </template>
 
 <style scoped>
+.introduction {
+  transition: background-color 0.5s ease, color 0.5s ease;
+}
+
+.introduction.light {
+  background-color: #ffffff;
+  color: #000000;
+}
+
+.introduction.dark {
+  background-color: #343a40;
+  color: #ffffff;
+}
+
 .introduction-content {
   max-width: 800px;
   margin: 0 auto;
