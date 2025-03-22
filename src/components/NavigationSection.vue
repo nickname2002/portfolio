@@ -22,8 +22,12 @@ onMounted(() => {
 })
 
 const chosenLanguage = computed(() => locale.value)
-const langIcon = computed(() => (chosenLanguage.value === 'nl' ? '🇳🇱' : '🇬🇧'))
-const navbarClass = computed(() => darkmodeEnabled.value ? 'navbar navbar-dark' : 'navbar navbar-light')
+const langIconClass = computed(() => chosenLanguage.value === 'nl'
+  ? 'fi fi-nl'
+  : 'fi fi-gb');
+const navbarClass = computed(() => darkmodeEnabled.value
+  ? 'navbar navbar-dark'
+  : 'navbar navbar-light')
 const iconColor = computed(() => darkmodeEnabled.value ? 'white' : '#343a40')
 
 function toggleLanguage() {
@@ -58,7 +62,10 @@ function toggleLanguage() {
           class="btn lang-button"
           @click="toggleLanguage"
           :class="{ clicked: isClicked }">
-          <span class="lang">{{ langIcon }}</span>
+          <span
+            class="lang"
+            :class="langIconClass"
+          />
         </button>
       </div>
     </div>
@@ -122,7 +129,8 @@ body {
 }
 
 .lang {
-  font-size: 1.75rem;
+  margin-top: 0.2rem;
+  font-size: 1.5rem;
 }
 
 .color-theme {
@@ -158,7 +166,7 @@ body {
   }
 
   .lang {
-    font-size: 2rem;
+    font-size: 1.75rem;
   }
 }
 </style>
