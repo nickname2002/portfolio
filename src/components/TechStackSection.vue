@@ -9,7 +9,7 @@ const githubIconClass = computed(() => darkmodeEnabled.value ? 'source-icon dark
 </script>
 
 <template>
-  <div :class="techStackClass">
+  <div :class="techStackClass" id="tools">
     <div class="container tech-stack-content">
       <h1 class="title">{{ $t('techstack.title') }}</h1>
       <h3 class="subtitle">{{ $t('techstack.description') }}</h3>

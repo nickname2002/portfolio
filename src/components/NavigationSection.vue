@@ -41,7 +41,7 @@ function toggleLanguage() {
 </script>
 
 <template>
-  <nav :class="navbarClass" class="navbar-expand-lg px-3">
+  <nav :class="navbarClass" class="navbar-expand-lg px-3" id="hero">
     <div class="container container-fluid">
       <!-- Site title -->
       <div class="site-title">

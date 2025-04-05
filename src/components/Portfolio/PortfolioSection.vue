@@ -10,7 +10,7 @@ const githubIconClass = computed(() => darkmodeEnabled.value ? 'social-icon gith
 </script>
 
 <template>
-  <div :class="portfolioClass">
+  <div :class="portfolioClass" id="portfolio">
     <div class="container portfolio-content">
       <h2>Portfolio</h2>
       <p>
