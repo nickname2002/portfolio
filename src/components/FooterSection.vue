@@ -95,5 +95,9 @@ const socialIconClass = computed(() => darkmodeEnabled.value ? 'social-icon dark
     width: 50px;
     height: 50px;
   }
+
+  .copyright {
+    padding-bottom: 140px !important;
+  }
 }
 </style>

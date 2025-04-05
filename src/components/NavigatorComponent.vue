@@ -117,7 +117,6 @@ function navigateTo(section: NavigationDestination) {
   width: 24px;
   height: 24px;
   fill: currentColor;
-  display: flex;
 }
 
 @media (max-width: 768px) {
@@ -131,8 +130,13 @@ function navigateTo(section: NavigationDestination) {
   }
 
   .fixed-nav button {
-    width: 40px;
-    height: 40px;
+    width: 56px;
+    height: 56px;
+  }
+
+  .fixed-nav .icon {
+    width: 28px;
+    height: 28px;
   }
 }
 </style>
