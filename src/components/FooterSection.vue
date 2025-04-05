@@ -9,7 +9,7 @@ const socialIconClass = computed(() => darkmodeEnabled.value ? 'social-icon dark
 </script>
 
 <template>
-  <footer :class="footerClass" class="py-4">
+  <footer :class="footerClass" class="py-4" id="contact">
     <div class="container text-center">
       <div class="contact-section">
         <h2>{{ $t('contact.title') }}</h2>
@@ -77,7 +77,7 @@ const socialIconClass = computed(() => darkmodeEnabled.value ? 'social-icon dark
 .copyright {
   font-family: 'Jost', sans-serif;
   padding-top: 10px;
-  padding-bottom: 10px;
+  padding-bottom: 100px !important;
 }
 
 @media (max-width: 768px) {

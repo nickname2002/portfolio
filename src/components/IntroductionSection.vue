@@ -10,7 +10,7 @@ const introductionClass = computed(() => darkmodeEnabled.value
 </script>
 
 <template>
-  <div :class="introductionClass">
+  <div :class="introductionClass" id="introduction">
     <div class="container introduction-content">
       <img class="portrait" src="../assets/portrait.jpg" alt="portrait" />
       <h1>{{ $t('introduction.title') }}</h1>
